@@ -39,7 +39,7 @@
 		return function () {
 			var canvas = document.getElementById(canvasId);
 			var ctx = canvas.getContext('2d');
-			alphas = [];
+			var alphas = [];
 			color = color || [255, 255, 255];
 
 			var len = canvas.width;
