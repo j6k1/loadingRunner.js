@@ -41,7 +41,8 @@
 			var ctx = canvas.getContext('2d');
 			var alphas = [];
 			color = color || [255, 255, 255];
-
+			if(Object.prototype.toString.call(color) === "[object Object]") color = [ color.r, color.g, color.b ];
+			
 			var len = canvas.width;
 			var r = len / 2;
 			var w = Math.round(len * 0.1);
