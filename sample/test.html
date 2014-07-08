@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>test</title>
+<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="loadingRunner.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+	loading_runner = new LoadingRunner(LoadingRunner.canvasLoaderCreator("loading"));
+	loading_runner.start();
+});
+</script>
+</head>
+<body>
+<style>
+body {
+	background-color: black;
+}
+a {
+	color: white;
+}
+</style>
+<h2>canvas loading test</h2>
+<canvas id="loading" width="30" height="30"></canvas>
+<a href="javascript:loading_runner.stop()" style="margin-top: 100px;">stop</a>
+</body>
+</html>
